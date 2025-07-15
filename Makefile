@@ -19,3 +19,6 @@ firmware.uf2: firmware.bin bin2uf2
 
 bin2uf2: tools/bin2uf2.c
 	$(CC) -W -Wall $< -o $@
+
+clean:
+	rm -rf firmware.*
