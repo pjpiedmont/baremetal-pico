@@ -57,3 +57,7 @@ dkms.conf
 # Compiled firmware files
 *.bin
 *.uf2
+
+# bin2uf2 executable
+bin2uf2
+bin2uf2.exe
