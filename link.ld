@@ -3,7 +3,7 @@ MEMORY {
   flash(rx) : ORIGIN = 0x10000000, LENGTH = 16M
   sram(rwx) : ORIGIN = 0x20000000, LENGTH = 264k
 }
-_estack = ORIGIN(sram) + LENGTH(sram)  /* stack points to end of SRAM */
+_estack = ORIGIN(sram) + LENGTH(sram);  /* stack points to end of SRAM */
 
 SECTIONS {
   .vectors : { KEEP(*(.vectors)) } > flash
